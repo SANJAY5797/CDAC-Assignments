@@ -10,9 +10,9 @@ void prompt_func(unsigned int number)
 	scanf("%d",&choice);
 	switch(choice)
 	{
-		case 1: printf("%x\n",(number&0xfa) );
+		case 1: printf("%x\n",(number&0xf0) );
 				break;
-		case 2: printf("%x\n",(number|0xfa) );
+		case 2: printf("%x\n",(number|0xff) );
 				break;
 		case 3: printf("%x\n",(number^0xfa) );
 				break;
