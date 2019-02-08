@@ -10,7 +10,7 @@ c. What is the value of *color?
 Ans: *color means the address of first string
 
 d. What is the value of *(color+2)?
-Ans: *(color+2) = 'd'
+Ans: *(color+2) value is address of third string first character
 
 e. How do color[5] and *(color + 5) differ?.
 Ans: in representation they differ...but they give same value
