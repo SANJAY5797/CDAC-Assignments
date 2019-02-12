@@ -6,7 +6,7 @@ struct complex
 	int real,img;
 };
 enum operation {
-	Addition,Subtraction,Multiplication,Division
+  addition=1,subtraction,multiplication,division,exits
 };
 void print(struct complex c)
 {
@@ -20,9 +20,32 @@ int main(int argc, char const *argv[])
 {
 	printf("Enter the operation you want to perform\n");
 	printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n\n");
-	int choice,x,y,z;
+	int x,y,z;
 	struct complex a,b,c;
-	scanf("%d",&choice);
+  printf("enter the choice in the form of name\n");
+  char s[20];
+  scanf("%s",s);
+  enum operation choice;
+  if(strcmp(s,"addition")==0)
+  {
+    choice=addition;
+  }
+  else if(strcmp(s,"subtraction")==0)
+  {
+    choice=subtraction;
+  }
+  else if(strcmp(s,"multiplication")==0)
+  {
+    choice=multiplication;
+  }
+  else if(strcmp(s,"division")==0)
+  {
+    choice=division;
+  }
+  else {
+    choice=exits;
+  }
+	//scanf("%d",&choice);
 	if(choice==5)
 	{
 		exit(0);
