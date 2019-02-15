@@ -2,10 +2,12 @@
 using namespace std;
 class String
 {
+	//private section
 	char *str;
 	int len;
 	public:
-		String()
+	//public section
+		String()//default constructor
 		{
 			str=NULL;
 			len=0;
@@ -21,15 +23,17 @@ class String
 			str=temp.str;
 			len=temp.len;
 		}
-		~String()
+		~String()//destructor
 		{
 		}
+		//member functions declarations
 		String operator+(String temp);
 		char operator[](int index);
 		friend ostream& operator<<(ostream &cout,String s);
 		friend istream& operator>>(istream &cin,String &s);
 		String operator=(String a);
 };
+//definitions of overloaded function
 String String::operator+(String temp)
 {
 	String res;
