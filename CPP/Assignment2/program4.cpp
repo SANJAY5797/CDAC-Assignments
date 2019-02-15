@@ -27,7 +27,7 @@ class complex
 		complex operator++();
 		complex operator++(int x);
 		complex operator=(complex b);
-		friend complex operator,(complex a,complex b);
+		complex operator,(complex b);
 		complex& operator[](int index);
 		friend ostream& operator<<(ostream& out,complex a);
 		friend istream& operator>>(istream& cin,complex &a);
@@ -53,18 +53,28 @@ complex complex::operator-()
 }
 complex complex::operator++()
 {
-	return complex(++real,++imag);
+	complex res;
+	res.real=++real;
+	res.imag=++imag;
+	return res;
 }
 complex complex::operator++(int x)
 {
-	return complex(real++,imag++);
+	complex res;
+	res.real=real;
+	res.imag=imag;
+	real++;
+	imag++;
+	return res;
 }
 complex complex::operator=(complex b)
 {
 	//cout<<"here";
-	return complex(b.real,b.imag);
+	real=b.real;
+	imag=b.imag;
+	return *this;
 }
-complex operator,(complex a,complex b)
+complex complex::operator,(complex b)
 {
 	return b;
 }
@@ -92,12 +102,20 @@ int main()
 {
 	complex samp,arr[3],a1,a2,a3,a4,*ptr;
 	for(int i=0;i<3;i++)
+	{
 		cin>>arr[i];
+	}
+	for(int i=0;i<3;i++)
+		cout<<arr[i];
 	ptr=&arr[0];
 	a1=arr[0]+arr[1];
 	a2=-arr[1];
-	a3=arr[0]++;
+	a3=arr[0];
+	//a3=arr[0]++;
 	a4=++arr[1];
+	cout<<endl;
+	cout<<a4<<endl;
+	cout<<a3<<endl<<endl;
 	samp=(a1,a2,a3);
 	cout<<samp<<endl;
 	for(int i=0;i<3;i++)
