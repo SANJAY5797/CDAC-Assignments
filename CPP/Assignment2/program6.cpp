@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
 	//creating objects
 	CopySituation a(2,5);
 	CopySituation b=a,c(a);
-	//invoking display function through objects
+	//invoking display function through the objects
 	a.display();
 	b.display();
 	c.display();
