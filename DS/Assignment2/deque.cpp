@@ -5,7 +5,7 @@ struct node
 	int data;
 	struct node *next;
 };
-class deque////////////////////////////to be updated
+class deque
 {
 	struct node* fron;
 	struct node* rear;
