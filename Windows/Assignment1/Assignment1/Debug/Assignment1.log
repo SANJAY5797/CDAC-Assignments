@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  Assignment1.cpp
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignment1\assignment1.cpp(24): warning C4477: 'printf_s' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'DWORD (__stdcall *)(void)'
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignment1\assignment1.cpp(39): warning C4477: 'printf_s' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'DWORD (__stdcall *)(void)'
+  Assignment1.vcxproj -> C:\Users\SANJAY KUMAR\source\repos\CDAC-NCR-Assignments\Windows\Assignment1\Debug\Assignment1.exe

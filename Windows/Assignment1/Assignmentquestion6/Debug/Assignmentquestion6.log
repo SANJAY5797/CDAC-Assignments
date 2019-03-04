@@ -1,0 +1,3 @@
+﻿  Assignmentquestion6.cpp
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion6\assignmentquestion6.cpp(40): warning C4477: 'wprintf_s' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  Assignmentquestion6.vcxproj -> C:\Users\SANJAY KUMAR\source\repos\CDAC-NCR-Assignments\Windows\Assignment1\Debug\Assignmentquestion6.exe
