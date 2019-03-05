@@ -1,0 +1,6 @@
+﻿  Assignmentquestion22dllapplication.cpp
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion22dllapplication\assignmentquestion22dllapplication.cpp(21): warning C4101: 'ptr1': unreferenced local variable
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion22dllapplication\assignmentquestion22dllapplication.cpp(20): warning C4101: 'MUL': unreferenced local variable
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion22dllapplication\assignmentquestion22dllapplication.cpp(20): warning C4101: 'SUB': unreferenced local variable
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion22dllapplication\assignmentquestion22dllapplication.cpp(20): warning C4101: 'DIV': unreferenced local variable
+  Assignmentquestion22dllapplication.vcxproj -> C:\Users\SANJAY KUMAR\source\repos\CDAC-NCR-Assignments\Windows\Assignment1\Debug\Assignmentquestion22dllapplication.exe

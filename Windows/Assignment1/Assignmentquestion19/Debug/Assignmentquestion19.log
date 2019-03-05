@@ -1,0 +1,4 @@
+﻿  Assignmentquestion19.cpp
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion19\assignmentquestion19.cpp(34): warning C4101: 'lpExitCode2': unreferenced local variable
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion19\assignmentquestion19.cpp(34): warning C4101: 'lpExitCode1': unreferenced local variable
+  Assignmentquestion19.vcxproj -> C:\Users\SANJAY KUMAR\source\repos\CDAC-NCR-Assignments\Windows\Assignment1\Debug\Assignmentquestion19.exe

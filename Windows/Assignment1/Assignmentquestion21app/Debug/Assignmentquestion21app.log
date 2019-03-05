@@ -1,0 +1,5 @@
+﻿  Assignmentquestion21app.cpp
+Assignmentquestion21app.obj : error LNK2019: unresolved external symbol __imp__sub referenced in function _main
+Assignmentquestion21app.obj : error LNK2019: unresolved external symbol __imp__mul referenced in function _main
+Assignmentquestion21app.obj : error LNK2019: unresolved external symbol __imp__division referenced in function _main
+C:\Users\SANJAY KUMAR\source\repos\CDAC-NCR-Assignments\Windows\Assignment1\Debug\Assignmentquestion21app.exe : fatal error LNK1120: 3 unresolved externals

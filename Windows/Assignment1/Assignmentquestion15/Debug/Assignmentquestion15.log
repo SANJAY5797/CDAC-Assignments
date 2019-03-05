@@ -1,0 +1,2 @@
+﻿  SecondFile.cpp
+c:\users\sanjay kumar\source\repos\cdac-ncr-assignments\windows\assignment1\assignmentquestion15\secondfile.cpp(31): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
