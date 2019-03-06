@@ -1,8 +1,8 @@
 #include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
-char rev[100];
-int strcomp(char s[50],char t[50])
+char rev[200];
+int strcomp(char s[100],char t[100])
 {
 	int i=0;
 	while(s[i]==t[i])
@@ -13,7 +13,7 @@ int strcomp(char s[50],char t[50])
 	}
 	return s[i]-t[i];
 }
-char *strev(char s[50])
+char *strev(char s[100])
 {
 	int i=0,j=strlen(s)-1;
 	while(i<strlen(s))
@@ -42,7 +42,7 @@ void strcopy(char *a,char *b)
 }
 int main(int argc, char const *argv[])
 {
-	char s[50],t[50],*cat;
+	char s[100],t[200],*cat;
 	printf("Enter the strings to compare\n");
 	scanf("%s",s);
 	scanf("%s",t);
@@ -54,9 +54,14 @@ int main(int argc, char const *argv[])
 	{
 		printf("The strings are unequal\n");
 	}
+	printf("enter the string to reverse\n");
+	scanf("%s",s);
 	char *rev=strev(s);
 	printf("reverse of string %s is\n", s);
 	printf("%s\n", rev);
+	printf("enter the strings to concatenate\n");
+	scanf("%s",s);
+	scanf("%s",t);
 	cat=strconcat(s,t);
 	printf("Concatenated string is\n");
 	printf("%s\n", cat);
