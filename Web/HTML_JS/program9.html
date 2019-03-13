@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading Time</title>
+</head>
+<body>
+	<h1>Welcome to html page</h1>
+	<p>some sample test to determine performance of the web page using js api</p>
+	<button onclick="load()">Get Load Time of Page</button>
+	<script type="text/javascript">
+		function load() {
+			var performanceObject = window.performance.timing;
+			var pLoadTime = performanceObject.loadEventEnd - performanceObject.navigationStart;
+			alert("loading time of the page is "+pLoadTime+" milliseconds");
+		}
+	</script>
+</body>
+</html>

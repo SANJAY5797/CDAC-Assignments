@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>address form</title>
+	<style type="text/css">
+		.column {
+			float: left;
+			margin: 10px 10px;
+		}
+		.row {
+			display: table;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div class="permanent">
+		<h1>Permanent Address</h1>
+		<div class="row">
+			<div class="column">H.no: </div>
+			<div class="column"><input type="text" id="hno" name="hno"/></div>
+		</div>
+		<div class="row">
+			<div class="column">Locality: </div>
+			<div class="column"><input type="text" id="locality" name="locality"/></div>
+		</div>
+		<div class="row">
+			<div class="column">Mandal: </div>
+			<div class="column"><input type="text" id="mandal" name="mandal"/></div>
+		</div>
+		<div class="row">
+			<div class="column">State: </div>
+			<div class="column">
+				<select name="state" id="state">
+					<option value="Telangana">Telangana</option>
+					<option value="Andhrapradesh">Andhra Pradesh</option>
+					<option value="Tamilnadu">Tamil Nadu</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">Pin Code: </div>
+			<div class="column"><input type="number" id="pcode" name="pcode"/></div>
+		</div>
+		<br>
+		<br>
+	</div>
+	<div class="fillDetails">
+		<input type="checkbox" name="fill">
+		Same as Current Address
+	</div>
+	<div class="temporary">
+		<h1>Temporary Address</h1>
+		<div class="row">
+			<div class="column">H.no: </div>
+			<div class="column"><input type="text" id="hno1" name="hno1"/></div>
+		</div>
+		<div class="row">
+			<div class="column">Locality: </div>
+			<div class="column"><input type="text" id="locality1" name="locality1"/></div>
+		</div>
+		<div class="row">
+			<div class="column">Mandal: </div>
+			<div class="column"><input type="text" id="mandal1" name="mandal1"/></div>
+		</div>
+		<div class="row">
+			<div class="column">State: </div>
+			<div class="column">
+				<select name="state" id="state1">
+					<option value="Telangana">Telangana</option>
+					<option value="Andhrapradesh">Andhra Pradesh</option>
+					<option value="Tamilnadu">Tamil Nadu</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">Pin Code: </div>
+			<div class="column"><input type="number" id="pcode1" name="pcode1"/></div>
+		</div>
+		<br>
+		<br>
+	</div>
+	<script>
+		$('input[type="checkbox"]'). click(function(){
+			if($(this). prop("checked") == true){
+				$("#hno1").val($("#hno").val());
+				$("#locality1").val($("#locality").val());
+				$("#mandal1").val($("#mandal").val());
+				$("#state1").val($("#state").val());
+				$("#pcode1").val($("#pcode").val());
+		}
+		if($(this). prop("checked") == false){
+				$("#hno1").val("");
+				$("#locality1").val("");
+				$("#mandal1").val("");
+				$("#state1").val("Telangana");
+				$("#pcode1").val("");
+		}});
+	</script>
+</body>
+</html>

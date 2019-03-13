@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		.container{
+			margin: 0 auto;
+		}
+		.first{
+			width:50px;
+			float:left;
+		}
+		input , button{
+			height:100px;
+			width:100px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<form name="calculator">
+			<div class="container">
+				<div class="row" class="first">
+					<div class="col-12">
+						<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+						<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+						<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+					</div>
+				</div>
+				<div class="row" class="second">
+					<div class="col-12">
+						<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+						<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+						<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+					</div>
+				</div>
+				<div class="row" class="third">
+					<div class="col-12">
+						<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+						<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+						<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+					</div>
+				</div>
+				<div class="row" class="fourth">
+					<div class="col-12">
+						<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+						<input type="button" name="" value="Evaluate" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+						<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row" class="fifth">
+					<div class="col-12">
+						<input type="textfield" name="ans" value="" readonly>
+						<input type="reset" name="reset" value="reset">
+					</div>
+				</div>
+			</div>
+		</form>
+	</center>
+</body>
+</html>

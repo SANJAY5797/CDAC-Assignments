@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Listeners</title>
+</head>
+<body>
+	<h1>Event Listeners</h1>
+	<p>Two methods are defined for one button click here</p>
+	<button id="button">Click Here</button>
+	<script type="text/javascript">
+		var element = document.getElementById("button");
+		element.addEventListener("click",one);
+		element.addEventListener("click",two);
+		function one(){
+			alert("first function is executing now");
+		}
+		function two() {
+			alert("second function is executing now");
+		}
+	</script>
+</body>
+</html>

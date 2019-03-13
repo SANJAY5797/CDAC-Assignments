@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<style type="text/css">
+		div{
+			margin: 10px 10px;
+		}
+		.registration {
+			margin-top: 200px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<form name="Registration" class="registration">
+			<div>
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" value="" placeholder="First name" required>	
+			</div>
+			<div>
+				<label for="secondname">Second Name</label>
+				<input type="text" name="secondname" value="" placeholder="Second name">
+			</div>
+			<div>
+				<label for="picture"></label>
+				<input type="file" name="picture" value="" accept="image/jpeg, image/gif, image/png" >
+			</div>
+			<div>
+				<label for="dob">Date Of Birth</label>
+				<input type="date" name="dob" id= "dob" placeholder="Date Of Birth">
+			</div>
+			<button onClick="calculateAge()">submit</button>
+		</form>
+	</center>
+	<script type="text/javascript">
+		function calculateAge()
+		{
+			console.log(document.getElementById('dob').value);
+
+			var birthday = new Date(document.getElementById('dob').value);
+			console.log(birthday instanceof Date);
+			var ageDiff = Date.now()-birthday.getTime();
+			var ageDate = new Date(ageDiff);
+			alert("age of the person "+Math.abs(ageDate.getUTCFullYear() - 1970));
+		}
+	</script>
+</body>
+</html>
